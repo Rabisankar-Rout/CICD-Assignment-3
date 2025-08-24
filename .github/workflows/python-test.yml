@@ -2,9 +2,9 @@ name: Python Tests
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   test:
@@ -25,5 +25,4 @@ jobs:
         pip install -r requirements.txt
 
     - name: Run unit tests
-      run: |
-        pytest 
+      run: pytest 
